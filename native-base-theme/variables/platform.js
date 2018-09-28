@@ -103,58 +103,58 @@ export default {
   checkboxTickColor: "#fff",
 
   // Color
-  brandPrimary: platform === "ios" ? "#007aff" : "#3F51B5",
-  brandInfo: "#62B1F6",
-  brandSuccess: "#5cb85c",
-  brandDanger: "#d9534f",
-  brandWarning: "#f0ad4e",
-  brandDark: "#000",
-  brandLight: "#f4f4f4",
+  brandPrimary: platform === "ios" ? "#B50085" : "#B50085",
+  brandInfo: "#A598A5",
+  brandSuccess: "#F313B7",
+  brandDanger: "#FF296B",
+  brandWarning: "#FF296B",
+  brandDark: "#403789",
+  brandLight: "#f1f1f1",
 
   //Container
   containerBgColor: "#fff",
 
   //Date Picker
-  datePickerTextColor: "#000",
+  datePickerTextColor: "#4E7983",
   datePickerBg: "transparent",
 
   // Font
   DefaultFontSize: 16,
-  fontFamily: platform === "ios" ? "System" : "Roboto",
+  fontFamily: platform === "ios" ? "System" : "Montserrat",
   fontSizeBase: 15,
   get fontSizeH1() {
-    return this.fontSizeBase * 1.8;
+    return this.fontSizeBase * 1.5;
   },
   get fontSizeH2() {
-    return this.fontSizeBase * 1.6;
+    return this.fontSizeBase * 1.125;
   },
   get fontSizeH3() {
-    return this.fontSizeBase * 1.4;
+    return this.fontSizeBase * 1;
   },
 
   // Footer
-  footerHeight: 55,
-  footerDefaultBg: platform === "ios" ? "#F8F8F8" : "#3F51B5",
-  footerPaddingBottom: 0,
+  footerHeight: 76,
+  footerDefaultBg: platform === "ios" ? "#ffffff" : "#ffffff",
+  footerPaddingBottom: 16,
 
   // FooterTab
-  tabBarTextColor: platform === "ios" ? "#6b6b6b" : "#b3c7f9",
-  tabBarTextSize: platform === "ios" ? 14 : 11,
-  activeTab: platform === "ios" ? "#007aff" : "#fff",
-  sTabBarActiveTextColor: "#007aff",
-  tabBarActiveTextColor: platform === "ios" ? "#007aff" : "#fff",
-  tabActiveBgColor: platform === "ios" ? "#cde1f9" : "#3F51B5",
+  tabBarTextColor: platform === "ios" ? "#59828B" : "#59828B",
+  tabBarTextSize: platform === "ios" ? 16 : 13,
+  activeTab: platform === "ios" ? "#ffffff" : "#ffffff",
+  sTabBarActiveTextColor: "#ffffff",
+  tabBarActiveTextColor: platform === "ios" ? "#ffffff" : "#ffffff",
+  tabActiveBgColor: platform === "ios" ? "#F313B7" : "#F313B7",
 
   // Header
-  toolbarBtnColor: platform === "ios" ? "#007aff" : "#fff",
-  toolbarDefaultBg: platform === "ios" ? "#F8F8F8" : "#3F51B5",
-  toolbarHeight: platform === "ios" ? 64 : 56,
+  toolbarBtnColor: platform === "ios" ? "#3A6A75" : "#3A6A75",
+  toolbarDefaultBg: platform === "ios" ? "#ffffff" : "#ffffff",
+  toolbarHeight: platform === "ios" ? 76 : 76,
   toolbarSearchIconSize: platform === "ios" ? 20 : 23,
-  toolbarInputColor: platform === "ios" ? "#CECDD2" : "#fff",
+  toolbarInputColor: platform === "ios" ? "#ffffff" : "#ffffff",
   searchBarHeight: platform === "ios" ? 30 : 40,
   searchBarInputHeight: platform === "ios" ? 30 : 50,
-  toolbarBtnTextColor: platform === "ios" ? "#007aff" : "#fff",
-  toolbarDefaultBorder: platform === "ios" ? "#a7a6ab" : "#3F51B5",
+  toolbarBtnTextColor: platform === "ios" ? "#3A6A75" : "#3A6A75",
+  toolbarDefaultBorder: platform === "ios" ? "#3A6A75" : "#3A6A75",
   iosStatusbar: platform === "ios" ? "dark-content" : "light-content",
   get statusBarColor() {
     return color(this.toolbarDefaultBg)
@@ -174,29 +174,29 @@ export default {
 
   // InputGroup
   inputFontSize: 17,
-  inputBorderColor: "#D9D5DC",
-  inputSuccessBorderColor: "#2b8339",
-  inputErrorBorderColor: "#ed2f2f",
+  inputBorderColor: "#BDCDD1",
+  inputSuccessBorderColor: "#F313B7",
+  inputErrorBorderColor: "#FF296B",
   inputHeightBase: 50,
   get inputColor() {
     return this.textColor;
   },
   get inputColorPlaceholder() {
-    return "#575757";
+    return "#5A828B";
   },
 
   // Line Height
   btnLineHeight: 19,
-  lineHeightH1: 32,
-  lineHeightH2: 27,
-  lineHeightH3: 22,
-  lineHeight: platform === "ios" ? 20 : 24,
+  lineHeightH1: 28,
+  lineHeightH2: 22,
+  lineHeightH3: 20,
+  lineHeight: platform === "ios" ? 20 : 20,
   listItemSelected: platform === "ios" ? "#007aff" : "#3F51B5",
 
   // List
   listBg: "transparent",
-  listBorderColor: "#c9c9c9",
-  listDividerBg: "#f4f4f4",
+  listBorderColor: "#BDCDD1",
+  listDividerBg: "#BDCDD1",
   listBtnUnderlayColor: "#DDD",
   listItemPadding: platform === "ios" ? 10 : 12,
   listNoteColor: "#808080",
