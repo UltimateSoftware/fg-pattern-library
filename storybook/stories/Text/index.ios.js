@@ -9,6 +9,8 @@ import material from '../../../native-base-theme/variables/platform';
 export class Typography extends Component {
   render() {
     return (
+      <StyleProvider style={getTheme(material)}>
+
       <Container>
         <Header />
         <Content>
@@ -18,6 +20,7 @@ export class Typography extends Component {
           <Text>Default</Text>
         </Content>
       </Container>
+      </StyleProvider>
     );
   }
 };

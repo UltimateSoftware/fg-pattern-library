@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
-import { Container, Header, Content, Tab, Tabs } from 'native-base';
+import { Container, Header, Content, Tab, Tabs, StyleProvider } from 'native-base';
 import Tab1 from './tabOne';
 import Tab2 from './tabTwo';
 import Tab3 from './tabThree';
 
+import getTheme from '../../../native-base-theme/components'; 
+import material from '../../../native-base-theme/variables/platform';
+
 export class TabProp extends Component {
   render() {
     return (
+      <StyleProvider style={getTheme(material)}>
       <Container>
         <Header hasTabs />
         <Tabs>
@@ -21,6 +25,7 @@ export class TabProp extends Component {
           </Tab>
         </Tabs>
       </Container>
+      </StyleProvider>
     );
   }
 }
