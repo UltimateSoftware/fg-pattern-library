@@ -10,7 +10,7 @@ import Profile from './Profile';
 import CenterView from './CenterView';
 import Welcome from './Welcome';
 
-storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
+storiesOf('Welcome', module).add('to Fearlessly Girl', () => <Welcome showApp={linkTo('Button')} />);
 
 storiesOf('Button', module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
@@ -26,7 +26,7 @@ storiesOf('Button', module)
   ));
 
 storiesOf('Profile', module)
-  .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
+  // .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
   .add('with picture', () => (
     <Profile></Profile>
   ))
