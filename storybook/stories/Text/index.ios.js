@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {
-  Container, Content, Header, H1, H2, H3, Text, StyleProvider
+  Container, Content, Header, H1, H2, H3, Text, StyleProvider, Left, Button, Icon
 } from 'native-base';
 
 import getTheme from '../../../native-base-theme/components'; 
@@ -12,7 +12,14 @@ export class Typography extends Component {
       <StyleProvider style={getTheme(material)}>
 
       <Container>
-        <Header />
+        <Header>
+          <Left>
+            <Button transparent>
+              <Icon name='arrow-back' />
+            </Button>
+          </Left>
+          <H1>SOMETHING</H1>
+        </Header>
         <Content>
           <H1>Header One</H1>
           <H2>Header Two</H2>

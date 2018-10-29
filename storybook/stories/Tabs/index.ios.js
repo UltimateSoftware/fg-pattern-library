@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Container, Header, Content, Tab, Tabs, StyleProvider } from 'native-base';
+import { Container, Header, Content, Tab, FooterTab, Footer, Button, Icon, Tabs, StyleProvider } from 'native-base';
+import {Text} from 'react-native'
 import Tab1 from './tabOne';
 import Tab2 from './tabTwo';
 import Tab3 from './tabThree';
@@ -26,6 +27,37 @@ export class TabProp extends Component {
         </Tabs>
       </Container>
       </StyleProvider>
+    );
+  }
+}
+
+export class FooterTabs extends Component {
+  render() {
+    return (
+      <Container>
+        <Header />
+        <Content />
+        <Footer>
+          <FooterTab>
+            <Button vertical>
+              <Icon name="apps" />
+              <Text>Apps</Text>
+            </Button>
+            <Button vertical>
+              <Icon name="camera" />
+              <Text>Camera</Text>
+            </Button>
+            <Button vertical active>
+              <Icon active name="navigate" />
+              <Text>Navigate</Text>
+            </Button>
+            <Button vertical>
+              <Icon name="person" />
+              <Text>Contact</Text>
+            </Button>
+          </FooterTab>
+        </Footer>
+      </Container>
     );
   }
 }
